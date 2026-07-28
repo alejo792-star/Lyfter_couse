@@ -1,6 +1,6 @@
 product_cost = float(input("Enter the product cost:💲"))
 if product_cost < 100:
-    discount = product_cost * 0.2
+    discount = product_cost * 0.02
 else:
     discount = product_cost * 0.1
 final_cost = product_cost - discount
