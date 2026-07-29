@@ -21,6 +21,7 @@ for grade in range(1, counter +1):
 if passing_grade  ==[]:
     print(f"cant to calculete cuz the list passing is empty")
 else:
+    print(f"The average of passing califications is: {prom_passing:.2f}")
     if failed_grades == []:
         print("cant to calculete cuz the list fail is empty")
     else:
