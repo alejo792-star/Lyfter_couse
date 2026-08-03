@@ -1,3 +1,4 @@
+
 sales = [
     {
         "date": "27/02/23",
@@ -54,5 +55,17 @@ sales = [
     },
 ]
 
+total_prices = {}
+for sale in sales:
+    for item in sale["items"]:
+        print(item["upc"],item["unit_price"])
+        if item["upc"] in total_prices:
+            total_prices[item["upc"]] += item["unit_price"]
+        else:
+            total_prices[item["upc"]] = item["unit_price"]
+print(total_prices)
 
-print(sales[0])
+
+
+
+    
