@@ -1,19 +1,17 @@
 
-# def count_letters(text,letter):
-text = "programacion"
-letter = "a"
-text_to_list = []
-text_to_list.append(text)
-counter_tetter = 0
-for i in text:
-    if text[i] == letter:
-        counter_tetter =+ 1
-    print(f"has been found {letter} = {counter_tetter}")
+def counter_character(text,character):
+    counter = 0 
+    for letter in text:
+        if (character == letter):
+            counter = counter + 1
+    return counter
 
-'''
+
 def main():
-    text_analyze = input("give me a word")
-    letter =input("give me a letter to find")
-    counter = count_letters(text_analyze,letter)
-    print(f"{counter} 😎")
-'''
+    text_analyze = input("give me a word📝: ")
+    letter =input("give me a letter to find🔎: ")
+    result = counter_character(text_analyze,letter)
+    print("analyzing🧐")
+    print(f"word: {text_analyze} --- character to find {letter}")
+    print(f"has been found {result}")
+main()
