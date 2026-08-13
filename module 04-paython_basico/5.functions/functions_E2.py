@@ -7,8 +7,8 @@ def filter_words_by_length(list_word, number):
 
 
 def main():
-    list_word =["cielo", "sol", "maravilloso", "día"]
-    number = 3
+    list_word = input("give words 📝: ").split()
+    number =int(input("now give a number📝: "))
     new_list = filter_words_by_length(list_word,number)
     print(f"{new_list} ✅")
 
