@@ -2,6 +2,7 @@ def calculate_addition(current_number, new_number):
     result = current_number + new_number
     return result
 
+
 def calculate_subtraction(current_number,new_number):
     result = current_number - new_number
     return result
@@ -67,13 +68,5 @@ def main():
         except ZeroDivisionError as e:
             print(f"Error: {e}")
         
-            
-
-            
-
-
-
-
-
 
 main()
