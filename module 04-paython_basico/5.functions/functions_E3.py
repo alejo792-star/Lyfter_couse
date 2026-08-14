@@ -1,4 +1,3 @@
-str_1 = "Hola mundo"
 
 def counter_vowels (text):
     counter = 0
@@ -8,7 +7,7 @@ def counter_vowels (text):
     return counter
 
 def main():
-    text = "hola mundo"
+    text = input("gime a word or small tex 🔎")
     text_clean = text.lower()
     result = counter_vowels(text_clean)
     print(f"the Vowel have been found {result}✅")
