@@ -7,55 +7,66 @@ def calculate_subtraction(current_number,new_number):
     result = current_number - new_number
     return result
 
+
 def calculate_multiplication(current_number,new_number):
     result = current_number * new_number
     return result
+
 
 def calculate_division(current_number,new_number):
     result = current_number / new_number
     return result
 
 
+def show_menu ():
+    print("* ⭐️ WELCOME TO CALCULATOR ⭐️*")
+    print("* ⭐️ ====MENU==== *")
+    print("* 1️⃣. ADDITION ")
+    print("* 2️⃣. SUBTRACTION ")
+    print("* 3️⃣. MULTIPLICATION ")
+    print("* 4️⃣. DIVISION ")
+    print("* 5️⃣. DELETE ↻ ")
+    print("====================") 
+
+
+def get_number():
+    new_number = float(input("Give me a new number:📝 "))
+    return new_number
+
+
+class Invalid_option(Exception):
+    pass
+
 def main():
     current_number = 0
-    class Invalid_option(Exception):
-        pass
-    
     while (True):
-        print("* ⭐️ WELCOME TO CALCULATOR ⭐️*")
         print(f"*⭐️****CURRENT NUMBER: {current_number}***⭐️")
-        print("* ⭐️ ====MENU==== *")
-        print("* 1️⃣. ADDITION ")
-        print("* 2️⃣. SUNTRACTION ")
-        print("* 3️⃣. MULTIPLICATION ")
-        print("* 4️⃣. DIVISION ")
-        print("* 5️⃣. GO BACK")
-        print("====================")
+        show_menu()
         try:
             user_option = int(input("Choose an option.📝: "))
             if (user_option <= 0 or user_option > 5):
                 raise Invalid_option("Invalid option❌")
             elif user_option == 1:
-                new_number = float(input("Give me a new number:📝 "))
+                new_number =get_number()
                 result = calculate_addition(current_number,new_number)
-                print(f"{current_number} + {new_number} = {result} ✅")
+                print(f"{current_number} + {get_number()} = {result} ✅")
                 current_number = result
             elif user_option == 2:
-                new_number = float(input("Give me a new number:📝 "))
-                result = calculate_subtraction(current_number,new_number)
-                print(f"{current_number} - {new_number} = {result} ✅")
+                get_number()
+                result = calculate_subtraction(current_number,get_number())
+                print(f"{current_number} - {get_number()} = {result} ✅")
                 current_number = result
             elif user_option == 3:
-                new_number = float(input("Give me a new number:📝 "))
+                new_number =get_number() 
                 result = calculate_multiplication(current_number,new_number)
-                print(f"{current_number} * {new_number} = {result} ✅")
+                print(f"{current_number} * {get_number()} = {result} ✅")
                 current_number = result
             elif user_option == 4:
-                new_number = float(input("Give me a new number:📝 "))
-                if new_number == 0:
+                new_number =get_number() 
+                if get_number() == 0:
                     raise ZeroDivisionError("can't calculate whit 0")
                 result = calculate_division(current_number,new_number)
-                print(f"{current_number} / {new_number} = {result} ✅")
+                print(f"{current_number} / {get_number()} = {result} ✅")
                 current_number = result
             elif user_option == 5:
                 current_number= 0
