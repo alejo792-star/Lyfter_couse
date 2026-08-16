@@ -33,6 +33,7 @@ def get_number():
     new_number = float(input("Give me a new number:📝 "))
     return new_number
 
+
 def get_menu_option():
     user_option = int(input("Choose an option.📝: "))
     if (user_option <= 0 or user_option > 5):
