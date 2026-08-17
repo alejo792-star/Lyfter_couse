@@ -19,11 +19,11 @@ def execute_operation(list_string):
 def get_menu_option():
     user_option = int(input("Choose an option.📝: "))
     if (user_option <= 0 or user_option > 2):
-        raise Invalid_option("Invalid option❌")
+        raise InvalidUserOption("Invalid option❌")
     return user_option
     
 
-class Invalid_option(Exception):
+class InvalidUserOption(Exception):
     pass
 def main():
         try:
@@ -37,7 +37,7 @@ def main():
             elif user_option == 2:
                 list_string = convert_string_to_list()
                 execute_operation(list_string)
-        except Invalid_option as e:
+        except InvalidUserOption as e:
                 print(f"Error: {e}")
         except ValueError as e:
                 print(f"error {e}")

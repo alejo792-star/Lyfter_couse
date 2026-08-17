@@ -11,7 +11,7 @@ def execute_operation(list_string):
 
 def main():
     my_list = ['10', 'manzana', '5.5', '3', 'n/a']
-    execute_operation(my_list)
     total =execute_operation(my_list)
     print(f"Total: {total}")
+    
 main()    
