@@ -1,7 +1,7 @@
 def get_name():
     name = input("What' your name: ")
     for character in name:
-        if character == character.isdigit:
+        if character.isdigit():
             raise InvalidNameError("The name can't be or contain a number ❌")
     return name
 
