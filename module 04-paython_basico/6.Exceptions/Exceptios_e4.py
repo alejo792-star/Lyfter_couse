@@ -13,5 +13,7 @@ def main():
     my_list = ['10', 'manzana', '5.5', '3', 'n/a']
     total =execute_operation(my_list)
     print(f"Total: {total}")
+
+if __name__ == "__main__":
+    main()   
     
-main()    
