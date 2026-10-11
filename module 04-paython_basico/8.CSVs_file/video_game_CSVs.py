@@ -14,7 +14,6 @@ def get_game_information(number_games):
     counter = 0
     games_list = []
     while counter < number_games:
-
         name = get_valid_text("Give a name📝: ")
         genre =get_valid_text("give the Genre 📝: ")
         developer = get_valid_text("who is geveloper'game📝: ")
@@ -27,7 +26,7 @@ def get_game_information(number_games):
                 }
         games_list.append(games)
         counter += 1
-        return games_list
+    return games_list
 
 
 def get_valid_text(message):
@@ -42,7 +41,7 @@ def get_valid_text(message):
 def save_games(path, games_list):
     with open(path,"w", encoding="utf-8", newline="") as file:
         headers = games_list[0].keys()
-        writer = csv.DictWriter(file,fieldnames=headers)
+        writer = csv.DictWriter(file,fieldnames=headers)#,delimiter="\t"#
         writer.writeheader()
         writer.writerows(games_list)
 
