@@ -43,5 +43,93 @@
         "sp_defense":50,
         "speed":65
     }
+},
+{
+    "name": "Squirtle",
+    "type": "Water",
+    "level": 10,
+    "weight_kg": 9.0,
+    "is_shiny": false,
+    "held_item": null,
+    "skills": [
+        "Water Gun",
+        "Tackle",
+        "Tail Whip",
+        "Bubble"
+    ],
+    "stats": {
+        "hp": 44,
+        "attack": 48,
+        "defense": 65,
+        "sp_attack": 50,
+        "sp_defense": 64,
+        "speed": 43
+    }
+},
+{
+    "name": "Bulbasaur",
+    "type": "Grass",
+    "level": 12,
+    "weight_kg": 6.9,
+    "is_shiny": false,
+    "held_item": "Miracle Seed",
+    "skills": [
+        "Tackle",
+        "Growl",
+        "Vine Whip",
+        "Poison Powder"
+    ],
+    "stats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "sp_attack": 65,
+        "sp_defense": 65,
+        "speed": 45
+    }
+},
+{
+    "name": "Eevee",
+    "type": "Normal",
+    "level": 15,
+    "weight_kg": 6.5,
+    "is_shiny": true,
+    "held_item": "Soothe Bell",
+    "skills": [
+        "Quick Attack",
+        "Tackle",
+        "Sand Attack",
+        "Bite"
+    ],
+    "stats": {
+        "hp": 55,
+        "attack": 55,
+        "defense": 50,
+        "sp_attack": 45,
+        "sp_defense": 65,
+        "speed": 55
+    }
+},
+{
+    "name": "Psyduck",
+    "type": "Water",
+    "level": 9,
+    "weight_kg": 19.6,
+    "is_shiny": false,
+    "held_item": null,
+    "skills": [
+        "Water Gun",
+        "Scratch",
+        "Confusion",
+        "Tail Whip"
+    ],
+    "stats": {
+        "hp": 50,
+        "attack": 52,
+        "defense": 48,
+        "sp_attack": 65,
+        "sp_defense": 50,
+        "speed": 55
+    }
 }
 ]
