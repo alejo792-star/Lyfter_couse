@@ -25,8 +25,7 @@ def show_information(pokemos):
         print("-" * 30)
         for key , value in pokemon["stats"].items():
             print(f"{key.replace('_',' ').title():<15}:{value:>3}")
-            
-        # print(f"Pokemon Name: {pokemon["name"]}\n {pokemon["stats"]}")
+
 
 def main():
     file_path = "pokemos.json"
